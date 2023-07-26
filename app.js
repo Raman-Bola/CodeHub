@@ -16,7 +16,7 @@ const LocalStrategy= require('passport-local');
 const Dsa= require('./models/dsa')
 const User=require('./models/user');
 
-mongoose.connect('mongodb://localhost:27017/CodeHub')
+mongoose.connect('mongodb+srv://raman22062002:Ramanbola123@cluster0.ld65bhm.mongodb.net/?retryWrites=true&w=majority')
     .then(()=>{
         console.log("Connection Open!");
     })
@@ -91,8 +91,6 @@ app.get('/',(req,res)=>{
 app.get('/contactUs',(req,res)=>{
     res.render('contactUs');
 })
-
-
 
 
 app.all('*',(req,res,next)=>{
