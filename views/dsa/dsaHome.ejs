@@ -1,0 +1,76 @@
+<% layout('layouts/boilerplate') %>
+
+<%- include('../partials/flash.ejs') %> 
+
+<!------------- HEADING  -------->
+<hr />
+<div class="heading flex-row">
+  <h1 data-aos="fade-right" data-aos-delay="200">Data Structures & Algorithms</h1>
+
+  <div class="navigators flex-row">
+    <form action="/">
+      <button>Home</button>
+    </form>
+    <form action="/dsa">
+      <button>All</button>
+    </form>
+    <form action="/dsa/new">
+      <Button>Add a Post</Button>
+    </form>
+  </div>
+</div>
+
+<!------------- HEADING  ----------->
+
+<!----------- SITE CONTENT  -------->
+
+<div class="site-content flex-row">
+  <div class="all">
+    <ul class="flex-column">
+      <% let count=1; %> <% for(let ele of dsa){%>
+      <div class="ques" data-aos="fade-right" data-aos-delay="200">
+          <li>
+            <a class="title" href="/dsa/<%= ele._id %>"><%=count%>.&nbsp<%= ele.title %></a>
+          </li>
+
+          <% if(ele.link){ %>
+          <form action="<%= ele.link %>">
+            <button class="present">Question link</button>
+          </form>
+          <% }else { %>
+          <form action="<%= ele.link %>">
+            <button class="notPresent">Link Not Present</button>
+          </form>
+          <% } %>
+
+          <textarea name="" id=""><%= ele.description %>  
+          </textarea>
+          <% count++; } %>
+        </div>
+    </ul>
+    </div>
+
+  <aside>
+      <div class="tags">
+          <h2>Tags</h2>
+              <ul class="tags-list">
+                  <li class="tag-item" data-aos="fade-left" data-aos-delay="100"><a href="/dsa?topics=Array">Array</a></li>
+                  <li class="tag-item" data-aos="fade-left" data-aos-delay="200"><a href="/dsa?topics=String">String</a></li>
+                  <li class="tag-item" data-aos="fade-left" data-aos-delay="300"><a href="/dsa?topics=Stack">Stack</a></li>
+                  <li class="tag-item" data-aos="fade-left" data-aos-delay="400"><a href="/dsa?topics=Queue">Queue</a></li>
+                  <li class="tag-item" data-aos="fade-left" data-aos-delay="500"><a href="/dsa?topics=Tree">Tree</a></li>
+                  <li class="tag-item" data-aos="fade-left" data-aos-delay="600"><a href="/dsa?topics=Graph">Graph</a></li>
+            </ul>
+       </div>
+  </aside>
+
+
+
+
+
+
+
+
+</div>
+
+<!----------- SITE CONTENT  -------->

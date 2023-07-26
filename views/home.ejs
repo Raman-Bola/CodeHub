@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeHub</title>
+
+
+    <!-- Owl-Carousel -->
+    <link rel="stylesheet" href="/stylesheets/owl.carousel.css">
+    <link rel="stylesheet" href="/stylesheetscss/owl.theme.default.min.css">
+
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="/stylesheets/aos.css"> 
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="/stylesheets/styleHome.css">
+    <script src="https://kit.fontawesome.com/3a79f20888.js" crossorigin="anonymous"></script> 
+
+</head>
+<body>
+    
+    <!------------------ Navigation ------------------>
+
+    <%- include('./partials/navbar') %> 
+
+    <!------------------ Navigation ------------------>
+
+    <!----------------- Main Site Section ------------->
+
+    <main>
+        
+        <!---------------- Site Title ------------>
+
+        <section class="site-title">
+            <div class="site-background" data-aos=fade-up" data-aos-delay="100">
+                <h3>Start Now</h3>
+                <h1>Coding Is Fun</h1>
+                <button class="btn">Explore</button>
+            </div>
+        </section>
+
+
+        <!---------------- Site Title ------------>
+
+        <!-------------- Blog Carousel ----------->
+        <section>
+
+            <div class="blog">
+                <div class="container">
+                    <div class="owl-carousel owl-theme blog-post">
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="/assets/DSA/1.webp" alt="post1" srcset="">
+                            <div class="blog-title">
+                                <h3>Data Structures & Algorithms</h3>
+                                <a href="/dsa" class="btn btn-blog">DSA</a>
+                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptas.</span>
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
+                            <img src="/assets/DEV/3.jpeg" alt="post1" srcset="">
+                            <div class="blog-title">
+                                <h3>Development</h3>
+                                <a href="/dev"class="btn btn-blog">DEV</a>
+                                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ducimus eum soluta voluptate facere in?</span>
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-left" data-aos-delay="200">
+                            <img src="/assets/ACAD/1.jpeg" alt="post1" srcset="">
+                            <div class="blog-title">
+                                <h3>Academics</h3>
+                                <a href="/acad" class="btn btn-blog">ACAD</a>
+                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae natus voluptate inventore nihil, earum quis.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-navigation">
+                        <span class="owl-nav-prev"> <i class="fa-solid fa-arrow-left-long"></i></span>
+                        <span class="owl-nav-next"> <i class="fa-solid fa-arrow-right -long"></i></span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-------------- Blog Carousel ----------->
+
+
+        <!-------------- Site Content ----------->
+        <section class="container">
+            <div class="site-content">
+                <div class="posts">
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200" >
+                        <div class="post-image">
+                            <div>
+                                <img class="img" src="/assets/Blog-post/leetcode.png" alt="Blog1" srcset="">
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fa-solid fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fa-solid fa-calendar-days text-gray"></i>&nbsp;&nbsp;28 Oct,2022</span>
+                                
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit recusandae </a>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis eveniet soluta magni impedit sit sunt hic sint, eos autem earum, natus eaque possimus suscipit delectus alias vel tempore odio corporis!</p>
+                            <button class="btn post-btn">Read More&nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img class="img" src="/assets/Blog-post/geeks.jpeg" alt="Blog1" srcset="">
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fa-solid fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fa-solid fa-calendar-days text-gray"></i>&nbsp;&nbsp;28 Oct,2022</span>
+                               
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit recusandae </a>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis eveniet soluta magni impedit sit sunt hic sint, eos autem earum, natus eaque possimus suscipit delectus alias vel tempore odio corporis!</p>
+                            <button class="btn post-btn">Read More&nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img class="img" src="/assets/Blog-post/Codechef.png" alt="Blog1" srcset="">
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fa-solid fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fa-solid fa-calendar-days text-gray"></i>&nbsp;&nbsp;28 Oct,2022</span>
+                                
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit recusandae </a>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis eveniet soluta magni impedit sit sunt hic sint, eos autem earum, natus eaque possimus suscipit delectus alias vel tempore odio corporis!</p>
+                            <button class="btn post-btn">Read More&nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img class="img" src="/assets/Blog-post/codeforce.jpeg" alt="Blog1" srcset="">
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fa-solid fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fa-solid fa-calendar-days text-gray"></i>&nbsp;&nbsp;28 Oct,2022</span>
+                                
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit recusandae </a>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis eveniet soluta magni impedit sit sunt hic sint, eos autem earum, natus eaque possimus suscipit delectus alias vel tempore odio corporis!</p>
+                            <button class="btn post-btn">Read More&nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="pagination flex-row">
+                        <a href="#"><i class="fa-solid fa-chevron-left"></i></a>
+                        <a href="#" class="pages">1</a>
+                        <a href="#" class="pages">2</a>
+                        <a href="#" class="pages">3</a>
+                        <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+
+                </div>
+                <aside class="sidebar">
+                    <div class="category">
+                        <h2>Category</h2>
+                        <ul class="category-list">
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="100">
+                                <a href="/dsa">DSA</a>
+                                
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="200">
+                                <a href="/development">Development</a>
+                               
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="300">
+                                <a href="/acad">Academics</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="popular-post">
+                        <h2>Popular Companies</h2>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img class="img" src="/assets/popular-post/Goldman_Sachs.png" alt="Blog1" srcset="">
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="https://www.goldmansachs.com">Goldman Sachs</a>                  
+                        </div>
+                    </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="300">
+                        <div class="post-image">
+                            <div>
+                                <img class="img" src="/assets/popular-post/atlassian.png" alt="Blog1" srcset="">
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="https://www.atlassian.com">Atlassian</a>                  
+                        </div>
+                    </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="400">
+                        <div class="post-image">
+                            <div>
+                                <img class="img" src="/assets/popular-post/deshaw.png" alt="Blog1" srcset="">
+                            </div>
+                            
+                        </div>
+                        <div class="post-title">
+                            <a href="https://www.deshawindia.com">DE Shaw</a>                  
+                        </div>
+                    </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="500">
+                        <div class="post-image">
+                            <div>
+                                <img class="img" src="/assets/popular-post/Arcesium-OG.webp" alt="Blog1" srcset="">
+                            </div>
+                           
+                        </div>
+                        <div class="post-title">
+                            <a href="https://www.arcesium.com">Arcesium</a>                  
+                        </div>
+                    </div>
+                        <div class="post-content">
+                        <div class="post-image">
+                            <div>
+                                <img class="img" src="/assets/popular-post/Wells_Fargo_Logo_(2020).png" alt="Blog1" srcset="">
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="https://www.wellsfargo.com">Wells Fargo</a>                  
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="newsletter" data-aos="fade-up" data-aos-delay="300">
+                        <h2>Any Queries</h2>
+                        <form action="mailto:raman22062002@gmail.com" method="POST" enctype="text/plain">
+                        <div class="form-element">
+                            <input type="text" name="" id="" class="input-element" placeholder="Email">
+                            <button class="btn form-btn">Send</button>
+                        </div>
+                        </form>
+                    </div>
+
+                    <!-- <div class="popular-tags">
+                        <h2>Popular Tags</h2>
+                        <div class="tags">
+                            <span class="tag"   data-aos="flip-up" data-aos-delay="200" >Software</span>
+                            <span class="tag"  data-aos="flip-up" data-aos-delay="300" >Technology</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="400" >Travels</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="500" >Lifestyle</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="600" >Illustrations</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="700" >Design</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="800" >Love</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="900" >Project</span>
+                        </div>
+                    </div> -->
+
+                </aside>
+            </div>
+        
+        
+        </section>
+        <!-------------- Site Content ----------->
+   
+    </main>
+
+    <!----------------- Main Site Section ------------->
+
+
+
+
+    <!-------------- Foooter ----------->
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia adipisci repellendus suscipit assumenda dolore totam modi error commodi debitis? Fugiat facilis nostrum iure cupiditate necessitatibus pariatur nesciunt hic officia atque.</p>
+            </div>
+            <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+                <h2>Any Queries</h2>
+                <p>Stay Updated With Us</p>
+                
+                <form action="mailto:raman22062002@gmail.com" method="POST" enctype="text/plain">
+                        <input type="email" name="" id="" placeholder="Email"><button><span><i class="fa-solid fa-chevron-right"></i></span></button>
+                    
+                </form>
+                </div> 
+            <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+                <h2>Instagram</h2>
+                <div class="flex-row">
+                    <img src="assets/popular-post/Goldman_Sachs.png" alt="insta1">
+                    <img src="assets/popular-post/atlassian.png" alt="insta2">
+                    <img src="assets/popular-post/Arcesium-OG.webp" alt="insta3">
+                </div>
+                <div class="flex-row">
+                    <img src="assets/popular-post/Wells_Fargo_Logo_(2020).png" alt="insta4">
+                    <img src="assets/popular-post/deshaw.png" alt="insta5">
+                </div>
+            </div>
+            <div class="follow" data-aos="fade-left" data-aos-delay="200">
+                <h2>Follow Us</h2>
+                <p>Let us be Social</p>
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright &#169 2022 All rights reserved | Made By Raman
+            </h4>
+        </div>
+        <div class="move-up">
+            <span><i class="fa-regular fa-2x fa-circle-up"></i></span>
+        </div>
+    </footer>
+
+    <!-------------- Foooter ----------->
+
+    
+
+    <!-- Jquery Library -->
+    <script src="/javascripts/jquery3.6.1.min.js"></script>
+
+    <!-- Owl-Carousel -->
+    <script src="/javascripts/owl.carousel.js"></script>
+    <script src="/javascripts/owl.carousel.min.js"></script>
+
+    <!-- AOS Library -->
+    <script src="/javascripts/aos.js"></script>
+
+    <!-- Custom Javascript -->
+    <script src="/javascripts/main.js"></script>
+
+</body>
+</html>

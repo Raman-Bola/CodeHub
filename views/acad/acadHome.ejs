@@ -1,0 +1,67 @@
+<% layout('layouts/boilerplate') %>
+
+<%- include('../partials/flash.ejs') %> 
+
+<!------------- HEADING  -------->
+<hr />
+<div class="heading flex-row">
+  <h1 data-aos="fade-right" data-aos-delay="200">Academics</h1>
+
+  <div class="navigators flex-row">
+    <form action="/">
+      <button>Home</button>
+    </form>
+    <form action="/acad">
+      <button>All</button>
+    </form>
+    <form action="/acad/new">
+      <Button>Add a Post</Button>
+    </form>
+  </div>
+</div>
+
+<!------------- HEADING  ----------->
+
+<!----------- SITE CONTENT  -------->
+
+<div class="site-content flex-row">
+  <div class="all">
+    <ul class="flex-column">
+      <% let count=1; %> <% for(let ele of acad){%>
+      <div class="ques" data-aos="fade-right" data-aos-delay="200">
+          <li>
+            <a class="title" href="/acad/<%= ele._id %>"><%=count%>.&nbsp<%= ele.title %></a>
+          </li>
+
+          <% if(ele.link){ %>
+          <form action="<%= ele.link %> ">
+            <button class="present">Link</button>
+          </form>
+          <% }else { %>
+          <form action="<%= ele.link %>">
+            <button class="notPresent">Link Not Present</button>
+          </form>
+          <% } %>
+
+          <textarea name="" id=""><%= ele.description %>  
+          </textarea>
+          <% count++; } %>
+        </div>
+    </ul>
+    </div>
+
+  <!-- <aside>
+      <div class="tags">
+          <h2>Tags</h2>
+              <ul class="tags-list">
+                  <li class="tag-item" data-aos="fade-left" data-aos-delay="100"><a href="/dev?topics=Web">Web</a></li>
+                  <li class="tag-item" data-aos="fade-left" data-aos-delay="200"><a href="/dev?topics=App">App</a></li>
+                  <li class="tag-item" data-aos="fade-left" data-aos-delay="300"><a href="/dev?topics=Game">Game</a></li>
+                 
+            </ul>
+       </div>
+  </aside> -->
+
+</div>
+
+<!----------- SITE CONTENT  -------->
